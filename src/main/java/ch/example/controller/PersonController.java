@@ -33,8 +33,10 @@ public class PersonController {
         if (XMLValidation.validateXMLSchema(p)) {
             Persons persons = JAXB.unmarshal(new StringReader(p), Persons.class);
             singletonEJB.addPerson(persons.getPerson());
+            singletonEJB.addEvent(Event.builder().isValid(true).build());
             return Response.created(URI.create("")).build(); // cannot return unique ressource id on bulk add
         } else {
+            singletonEJB.addEvent(Event.builder().isValid(false).message("XML validation failed.").build());
             return Response.status(Response.Status.BAD_REQUEST.getStatusCode(), "XML validation failed.").build();
         }
     }

@@ -26,6 +26,18 @@ public class SingletonEJB implements SingletonEJBLocal {
     public void initialize() {
         persons = Persons.builder().build();
         persons.setPerson(new ArrayList<>());
+        statistics = Statistics.builder().build();
+        statistics.setEvents(new ArrayList<>());
+    }
+
+    @Override
+    public Statistics getStatistics() {
+        return statistics;
+    }
+
+    @Override
+    public void addEvent(Event event) {
+        statistics.getEvents().add(event);
     }
 
     @Override
