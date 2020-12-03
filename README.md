@@ -34,7 +34,7 @@ werden:
 
 
 ## Anmerkungen
-* Coding Challenge wurde time boxed durchgeführt, ca. 10h
+* Coding Challenge wurde time boxed durchgeführt, ca. 10h, mit bescheidenen JEE Kenntnissen als Ausgangslage.
 * Ein Update auf eine Person kann nur schwer vollzogen werden wenn kein eindeutiges Attribut (bspw. ID besteht) => Regeln zum Update unklar.
 * Das XSD Schema hat einen Syntax Fehler auf Zeile 28 
 * Ungünstige Vorgabe von Endpoint POST "person/add":
