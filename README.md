@@ -1,4 +1,4 @@
-# hrm-systems-fullstack-backend-challenge
+# jee-backend-challenge
 
 ## Aufgabe REST Webservice Backend
 Erstellen Sie einen REST Webservice für die von uns zur Verfügung gestellte Postman Collection. Die Implementation soll über folgende Features verfügen:
