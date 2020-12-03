@@ -1,20 +1,22 @@
-package ch.example.api;
+package ch.example.model;
 
 import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
-import lombok.Getter;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-        "person"
-})
+@XmlType(name = "", propOrder = {"person"})
 @XmlRootElement(name = "persons")
-@Getter
+@Builder
+@Setter
 @NoArgsConstructor
+@AllArgsConstructor
 public class Persons {
 
     @XmlElement(required = true)
