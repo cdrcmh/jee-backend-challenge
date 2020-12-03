@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+  <person>
+    <name>John-Jane Doe</name>
+	<gender>t</gender>
+	<age>23</age>
+  </person>
+</persons>

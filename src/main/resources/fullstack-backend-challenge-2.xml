@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+  <person>
+    <name>John Doe Sr</name>
+	<gender>m</gender>
+	<age>53</age>
+  </person>
+  <person>
+    <name>John Doe</name>
+	<gender>m</gender>
+	<age>23</age>
+  <person>
+    <name>John Doe Jr</name>
+	<gender>m</gender>
+	<age>2</age>
+  </person>
+  </person>
+</persons>
